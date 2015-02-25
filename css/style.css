@@ -1,0 +1,138 @@
+.link
+{
+    text-decoration: none;
+}
+
+.twi {
+    margin-top: 80px;
+    opacity:0;
+    font: normal 15pt "Euphemia UCAS";
+    color: white;
+    letter-spacing: 2px;
+	text-align:right; 
+    padding-right: 20px;
+    vertical-align:middle;
+    
+    animation:fadeIn 1.5s 5s;
+	-webkit-animation:fadeIn 1.5s 5s;
+    animation-fill-mode: forwards;  
+    -webkit-animation-fill-mode: forwards;  
+}
+
+.main {
+	margin-top: 0px;
+    font: normal 34pt "Euphemia UCAS";
+    color: white;
+	text-align:center; 
+    vertical-align:middle; 
+}
+
+.main_tags {
+    font: normal 16pt "Euphemia UCAS";
+    color: white;
+	text-align:center; 
+    opacity:0;
+    vertical-align:middle;
+    position:relative;
+    animation:bounce 1.5s 2s;
+	-webkit-animation:bounce 1.5s 2s;
+    animation-fill-mode: forwards;  
+    -webkit-animation-fill-mode: forwards;  
+
+}
+
+.secondary_tags {
+    font: normal 13pt "Euphemia UCAS";
+    color: white;
+	text-align:center; 
+    opacity:0;
+    vertical-align:middle;
+    position:relative;
+    
+    animation:bounce 1.5s 3s;
+	-webkit-animation:bounce 1.5s 3s; 
+    animation-fill-mode: forwards;  
+    -webkit-animation-fill-mode: forwards;  
+}	
+
+.footer {
+    width: 100%;
+    height: 0px;
+    bottom: 10px;
+    opacity:0;
+    font: normal 8pt "Euphemia UCAS";
+    color: white;
+	text-align:center; 
+    vertical-align:bottom;
+    position:fixed;
+
+    animation:fadeIn 1.5s 5.5s;
+	-webkit-animation:fadeIn 1.5s 5.5s;
+    animation-fill-mode: forwards;  
+    -webkit-animation-fill-mode: forwards;  
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    
+    animation:changeBg 3s;  
+    animation-fill-mode: forwards; 
+    -webkit-animation:changeBg 3s;
+
+    -webkit-animation-fill-mode: forwards;  
+}
+
+
+@keyframes bounce{
+    0%   {top:-700px;}
+    60% {opacity:1; top:20px;}
+    80% {opacity:1; top:-10px;}
+    100% {opacity:1; top:0px;}
+}
+
+@-webkit-keyframes bounce{
+    0%   {top:-700px;}
+    60% {opacity:1; top:20px;}
+    80% {opacity:1; top:-10px;}
+    100% {opacity:1; top:0px;}
+}
+
+@keyframes changeBg {
+    100% {background: #1C1C1C}
+}
+@-webkit-keyframes changeBg {
+    100% {background: #1C1C1C}
+}
+
+@keyframes slideBg {
+    0% {background: #1C1C1C url('icon.png') no-repeat top left; background-position: 50% -100%;
+    background-size:90px 90px;}
+    100% {background: #1C1C1C url('icon.png') no-repeat top left; background-position: 50% 16%;
+    background-size:90px 90px;}
+}
+@-webkit-keyframes slideBg {
+      0% {background: #1C1C1C url('icon.png') no-repeat top left; background-position: -50% 0%;
+    background-size:90px 90px;}
+    100% {background: #1C1C1C url('icon.png') no-repeat top left; background-position: 0% 0%;
+    background-size:90px 90px;}
+}
+
+@keyframes fadeIn {
+    100% {opacity:0.6}
+}
+
+@-webkit-keyframes fadeIn {
+    100% {opacity:0.6}
+}

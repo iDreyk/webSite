@@ -1,0 +1,35 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav{
+    opacity:0;
+    font: normal 12pt "Euphemia UCAS";
+    color: white;
+	text-align:right; 
+    vertical-align:middle;
+    animation:fadeIn 1.5s 5s;
+	-webkit-animation:fadeIn 1.5s 5s;
+    animation-fill-mode: forwards;  
+    -webkit-animation-fill-mode: forwards;  
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 2px;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    
+}
+
+.link_style a span{
+	display: block;
+	padding: 10px 10px;
+}
