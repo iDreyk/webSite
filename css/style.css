@@ -34,11 +34,20 @@
     opacity:0;
     vertical-align:middle;
     position:relative;
+    
     animation:bounce 1.5s 2s;
 	-webkit-animation:bounce 1.5s 2s;
     animation-fill-mode: forwards;  
     -webkit-animation-fill-mode: forwards;  
+}
 
+.main_tags a {
+    color: white;
+	display: inline-block;
+	outline: none;
+	text-decoration: none;
+	letter-spacing: 2px;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);    
 }
 
 .secondary_tags {
