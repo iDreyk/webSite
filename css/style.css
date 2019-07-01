@@ -1,47 +1,17 @@
-.link
-{
-    text-decoration: none;
-}
-
-.twi {
-    margin-top: 80px;
-    opacity:0;
-    font: normal 15pt "Euphemia UCAS";
-    color: white;
-    letter-spacing: 2px;
-	text-align:right; 
-    padding-right: 20px;
-    vertical-align:middle;
-    
-    animation:fadeIn 1.5s 5s;
-	-webkit-animation:fadeIn 1.5s 5s;
-    animation-fill-mode: forwards;  
-    -webkit-animation-fill-mode: forwards;  
-}
-
 .main {
-	margin-top: 0px;
-    font: normal 34pt "Euphemia UCAS";
+	margin-top: 20px;
+    font: normal 34pt "Andale Mono", AndaleMono, monospace;
     color: white;
 	text-align:center; 
     vertical-align:middle; 
 }
 
-.main_tags {
-    font: normal 16pt "Euphemia UCAS";
-    color: white;
-	text-align:center; 
-    opacity:0;
-    vertical-align:middle;
-    position:relative;
-    
-    animation:bounce 1.5s 2s;
-	-webkit-animation:bounce 1.5s 2s;
-    animation-fill-mode: forwards;  
-    -webkit-animation-fill-mode: forwards;  
+.tags {
+    font: normal 16pt "Andale Mono", AndaleMono, monospace;
+    position:relative;    
 }
 
-.main_tags a {
+.tags a {
     color: white;
 	display: inline-block;
 	outline: none;
@@ -50,18 +20,8 @@
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);    
 }
 
-.secondary_tags {
-    font: normal 13pt "Euphemia UCAS";
-    color: white;
-	text-align:center; 
-    opacity:0;
-    vertical-align:middle;
-    position:relative;
-    
-    animation:bounce 1.5s 3s;
-	-webkit-animation:bounce 1.5s 3s; 
-    animation-fill-mode: forwards;  
-    -webkit-animation-fill-mode: forwards;  
+.small {
+    font: normal 13pt "Andale Mono", AndaleMono, monospace;
 }	
 
 .footer {
@@ -69,16 +29,11 @@
     height: 0px;
     bottom: 10px;
     opacity:0;
-    font: normal 8pt "Euphemia UCAS";
+    font: normal 8pt "Andale Mono", AndaleMono, monospace;
     color: white;
 	text-align:center; 
     vertical-align:bottom;
     position:fixed;
-
-    animation:fadeIn 1.5s 5.5s;
-	-webkit-animation:fadeIn 1.5s 5.5s;
-    animation-fill-mode: forwards;  
-    -webkit-animation-fill-mode: forwards;  
 }
 
 html{
@@ -95,47 +50,45 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-    
-    animation:changeBg 3s;  
-    animation-fill-mode: forwards; 
-    -webkit-animation:changeBg 3s;
+    background: #1C1C1C
+}
 
+.bounce_animation {
+    opacity:0;
+    animation:bounce 1.0s 0s;
+	-webkit-animation:bounce 1.0s 0s;
+    animation-fill-mode: forwards;  
     -webkit-animation-fill-mode: forwards;  
 }
 
+.fade_in_animation {
+    opacity:0;
+    animation:fadeIn 0.5s 1s;
+	-webkit-animation:fadeIn 0.5s 1s;
+    animation-fill-mode: forwards;  
+    -webkit-animation-fill-mode: forwards;  
+}
+
+.fast_fade_in_animation {
+    opacity:0;
+    animation:fullFadeIn 0.5s 0.3s;
+	-webkit-animation:fullFadeIn 0.5s 0.3s;
+    animation-fill-mode: forwards;  
+    -webkit-animation-fill-mode: forwards;  
+}
 
 @keyframes bounce{
     0%   {top:-700px;}
-    60% {opacity:1; top:20px;}
-    80% {opacity:1; top:-10px;}
+    60% {opacity:0.5; top:10px;}
+    80% {opacity:1; top:-5px;}
     100% {opacity:1; top:0px;}
 }
 
 @-webkit-keyframes bounce{
     0%   {top:-700px;}
-    60% {opacity:1; top:20px;}
-    80% {opacity:1; top:-10px;}
+    60% {opacity:0.5; top:10px;}
+    80% {opacity:1; top:-5px;}
     100% {opacity:1; top:0px;}
-}
-
-@keyframes changeBg {
-    100% {background: #1C1C1C}
-}
-@-webkit-keyframes changeBg {
-    100% {background: #1C1C1C}
-}
-
-@keyframes slideBg {
-    0% {background: #1C1C1C url('icon.png') no-repeat top left; background-position: 50% -100%;
-    background-size:90px 90px;}
-    100% {background: #1C1C1C url('icon.png') no-repeat top left; background-position: 50% 16%;
-    background-size:90px 90px;}
-}
-@-webkit-keyframes slideBg {
-      0% {background: #1C1C1C url('icon.png') no-repeat top left; background-position: -50% 0%;
-    background-size:90px 90px;}
-    100% {background: #1C1C1C url('icon.png') no-repeat top left; background-position: 0% 0%;
-    background-size:90px 90px;}
 }
 
 @keyframes fadeIn {
@@ -145,3 +98,12 @@ body {
 @-webkit-keyframes fadeIn {
     100% {opacity:0.6}
 }
+
+@keyframes fullFadeIn {
+    100% {opacity:1.0}
+}
+
+@-webkit-keyframes fullFadeIn {
+    100% {opacity:1.0}
+}
+
